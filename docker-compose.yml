@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  your-service-name:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - MONITORED_FOLDER=/path/to/your/folder
+    volumes:
+      - /path/to/your/folder:/app/input
